@@ -1,12 +1,26 @@
 $(function () {
-	/*$('.hd-low-motion-sprite').spritespin({
-		width: 1920,
-		height: 1080,
-		frames: 36,
-		resX: 1920,
-		resY: 38880,
-		source: '../images/spritespin/sprites_full_size.jpg'
-	});*/
 
-	$('.hd-low-motion-sprite').spChangeDir('down').sprite({fps: 12, no_of_frames: 36, dir: 'up'});
+	window.JF = window.JF || {};
+	JF.stop = function (position) {
+		window.clearInterval(JF.references[position]);
+	}
+	
+	JF.references = [];
+
+	JF.references.push(animateSprite($('.rm-3sec-468'), 9504, 36, 12));
+
+
 });
+
+var animateSprite = function ($object, spriteHeight, totalFrames, fps) {
+	var spriteOffset = 0,
+		stepSize = spriteHeight / totalFrames;
+
+	var reference = window.setInterval(function () {
+		spriteOffset =  (-1 * (spriteOffset - stepSize) < spriteHeight) ? spriteOffset -  stepSize : 0;
+		$object.css('background-position',  '0px ' + spriteOffset + 'px');
+	}, Math.ceil(1000/fps));
+
+	return reference;
+};
+

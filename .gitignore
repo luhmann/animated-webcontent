@@ -3,3 +3,10 @@ dist
 .tmp
 .sass-cache
 app/bower_components
+
+
+#Ignore Mac-Files
+.DS_Store
+
+#Ignore PHP-Storm Folder 
+/.idea
