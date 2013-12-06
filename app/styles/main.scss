@@ -53,8 +53,20 @@ body {
     background-image: image-url('spritespin/sprites_full_size.jpg');
 }
 
-.rm-3sec-468 {
+.is-8x2 {
     width: 468px;
     height: 264px;
-    background-image: image-url('sprites/sprite-rm-1sec-468.jpg');
+}
+
+.is-4x1 {
+    width: 228px;
+    height: 129px;
+}
+ 
+.rm-3sec-468 {
+    background-image: image-url('sprites/sprite-rm-3sec-468.jpg');
+}
+
+.rm-3sec-228 {
+    background-image: image-url('sprites/sprite-rm-3sec-468.jpg');
 }
