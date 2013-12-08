@@ -45,13 +45,7 @@ body {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
-}
-
-.hd-low-motion-sprite {
-    width: 1920px;
-    height: 1080px;
-    background-image: image-url('spritespin/sprites_full_size.jpg');
-}
+}   
 
 .is-8x2 {
     width: 468px;
@@ -68,5 +62,9 @@ body {
 }
 
 .rm-3sec-228 {
-    background-image: image-url('sprites/sprite-rm-3sec-468.jpg');
+    background-image: image-url('sprites/sprite-rm-3sec-228.jpg');
+}
+
+.fm-3sec-468 {
+    background-image: image-url('sprites/sprite-fm-3sec-468.jpg');
 }

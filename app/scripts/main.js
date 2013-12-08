@@ -9,6 +9,7 @@ $(function () {
 
 	JF.references.push(animateSprite($('.rm-3sec-468'), 9504, 36, 12));
 	JF.references.push(animateSprite($('.rm-3sec-228'), 4644, 36, 12));
+	JF.references.push(animateSprite($('.fm-3sec-468'), 9504, 36, 12));
 
 });
 
